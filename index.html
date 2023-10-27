@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/javascript">
+        //Select element with app "id"
+        const app = document.getElementById('app');
+
+        //Create new h1 Element
+        const header = document.createElement('h1');
+
+        //Create new text node
+        const text = document.createTextNode('Halo guys.');
+
+        //Append the text to the h1 element
+        header.appendChild(text);
+
+        //Put the h1 element to the div element (parentNode)
+        app.appendChild(header);
+    </script>
+</body>
+</html>
